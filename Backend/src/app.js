@@ -11,7 +11,7 @@ const app = express(); // es basicamente el servidor
 // console.log('on port ', 3000);
 // app.use(cors()); // permite que cualquier dominio se puedea comunicar en este servidor
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://portafolio2jonnathan2023.000webhostapp.com/',
     credentials: true   // Esto permite establecer las cookies
 })); // permite que este otro dominio se puedea comunicar en este servidor
 app.use(morgan('dev')); // la aplicacion app usa el modulo morgan en su configuracion dev.sirve para ver la info en consola del terminal.
