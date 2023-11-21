@@ -8,9 +8,7 @@ app.listen(port, () => {
     console.log(`puerto corriendo en: ${port}`);
 })
 
-app.get("/", (req, res) => {
-    res.send("Esta activo el backend")
-})
+
 // app.listen(4000);
 // console.log('Server on port ', 4000);
 

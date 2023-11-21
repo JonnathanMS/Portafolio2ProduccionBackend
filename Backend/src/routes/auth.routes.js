@@ -20,5 +20,8 @@ router.post("/logout", logout);
 router.get("/verify", verifyToken); //*PARA CADA RUTA QUE SE QUIERA PROTEGER SOLO PONER EL authRequired
 router.get("/profile", authRequired, profile); //*PARA CADA RUTA QUE SE QUIERA PROTEGER SOLO PONER EL authRequired
 router.put('/cambiarContrasena', authRequired, validateSchema(updateSchema), updatePassword); // Actualizar un elemento por el id.
+router.get("/", (req, res) => {
+    res.send("Esta activo el backend")
+})
 
 export default router;
