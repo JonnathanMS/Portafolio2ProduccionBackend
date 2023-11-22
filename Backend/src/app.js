@@ -22,9 +22,9 @@ app.use(morgan('dev')); // la aplicacion app usa el modulo morgan en su configur
 app.use(express.json()); // es para que se puedan convertir los request body en formato json
 app.use(cookieParser());
 
-app.use("/api", authRoutes);// asi se modifica la url// app.use(authRoutes); asi cuando api se pone desde auth.routes.js
-app.use("/api", taskRoutes);
-app.use("/api", citasGeneralRoutes);
+app.use("/api/v1", authRoutes);// asi se modifica la url// app.use(authRoutes); asi cuando api se pone desde auth.routes.js
+app.use("/api/v1", taskRoutes);
+app.use("/api/v1", citasGeneralRoutes);
 
 
 export default app;
