@@ -25,6 +25,8 @@ app.use(cookieParser());
 app.use("/api/v1", authRoutes);// asi se modifica la url// app.use(authRoutes); asi cuando api se pone desde auth.routes.js
 app.use("/api/v1", taskRoutes);
 app.use("/api/v1", citasGeneralRoutes);
-
+app.use("/", (req, res) => {
+    res.send("El servidor esta funcionando");
+})
 
 export default app;
