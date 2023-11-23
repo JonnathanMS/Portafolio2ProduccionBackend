@@ -1,6 +1,7 @@
 import express, { application } from 'express';
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
 import authRoutes from './routes/auth.routes.js';
 import taskRoutes from './routes/tasks.routes.js';
 import citasGeneralRoutes from './routes/citasGeneral.routes.js';
@@ -8,6 +9,7 @@ import cors from 'cors';
 import CitaGeneral from "./models/citaGeneral.model.js";
 
 const app = express(); // es basicamente el servidor
+app.use(bodyParser.json);
 // app.listen(3000); esto se provo y se paso para index
 // console.log('on port ', 3000);
 // app.use(cors()); // permite que cualquier dominio se puedea comunicar en este servidor
