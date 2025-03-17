@@ -1,1 +1,1 @@
-export const TOKEN_SECRET = 'VUTPyoPwzGJmNf4f';
+export const TOKEN_SECRET = 'LíneaBorrada';
